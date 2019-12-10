@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NavigationActivity</string>
+    <string name="navigation_drawer_open">values</string>
+    <string name="navigation_drawer_close">values</string>
+    <string-array name="array_dot_active">array</string-array>
+    <string-array name="array_dot_inactive">array</string-array>
+</resources>

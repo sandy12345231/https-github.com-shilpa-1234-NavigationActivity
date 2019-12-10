@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ser.navigationactivity">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+android:logo="@drawable/chineese"
+        android:allowBackup="true"
+        android:icon="@mipmap/chineese"
+        android:label="Canteen_food"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".SplashScreenActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".AddItemActivity"/>
+        <activity android:name=".AddressSetActivity"/>
+        <activity android:name=".AddToCartActivity"/>
+        <activity android:name=".ConfirmOrderActivity"/>
+        <activity android:name=".PayToPaymentActivity"/>
+        <activity android:name=".ProductListingitem"/>
+        <activity android:name=".RegistrationActivity"/>
+        <activity android:name=".ViewAllOrderActivity"/>
+
+    </application>
+
+</manifest>

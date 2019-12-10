@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/viewCart" android:title="viewCart" />
+    <item android:id="@+id/nav_home" android:title="nav_home"/>
+    <item android:id="@+id/nav_order" android:title="nav_order"/>
+    <item android:id="@+id/nav_share" android:title="nav_share"/>
+    <item android:id="@+id/nav_logout" android:title="nav_logout"/>
+</menu>

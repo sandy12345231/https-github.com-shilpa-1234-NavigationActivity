@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="120dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/Cartimage"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/CartbrandName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Brand Name"
+                android:textAllCaps="true"
+                android:textColor="#2d2d2d"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/CartDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="OnDelete"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:src="@drawable/ic_delete_black_24dp" />
+
+            <TextView
+                android:id="@+id/CartPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CartbrandName"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Price : Rs"
+
+                android:textColor="#030303" />
+
+            <TextView
+                android:id="@+id/CartQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CartPrice"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Quantity : "
+                android:textColor="#060606" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

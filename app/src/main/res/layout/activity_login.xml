@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.ser.navigationactivity.LoginActivity">
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/loginUser"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/user"
+
+        android:layout_marginTop="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textPass"
+        android:layout_toEndOf="@+id/textPass" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Email"
+        android:textSize="15dp"
+        android:layout_below="@+id/loginUser"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#fc7e1d"/>
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:id="@+id/editEmail"
+        android:textSize="20dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/textEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/textPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Password"
+        android:layout_below="@+id/editEmail"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#fc7e1d"/>
+
+    <EditText
+        android:id="@+id/editPass"
+        android:textSize="20dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:inputType="textPassword"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/textPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:textColor="#fff"
+        android:background="#e76a11"
+        android:layout_marginTop="103dp"
+        android:layout_below="@+id/editPass"
+        android:layout_alignLeft="@+id/editPass"
+        android:layout_alignStart="@+id/editPass" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#fff"
+        android:background="#e76a11"
+        android:layout_alignBaseline="@+id/btnLogin"
+        android:layout_alignBottom="@+id/btnLogin"
+        android:layout_alignRight="@+id/editPass"
+        android:layout_alignEnd="@+id/editPass" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="If You are new user then first register"
+    android:gravity="center"
+    android:textColor="#fc7e1d"
+    android:layout_below="@+id/btnLogin"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="22dp" />
+</RelativeLayout>
